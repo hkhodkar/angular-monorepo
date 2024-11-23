@@ -1,2 +1,7 @@
-<app-nx-welcome></app-nx-welcome>
+<div #greeting>Hello!</div>
+@defer (on hover(greeting)) {
+  <lib-products />
+} @placeholder {
+  <div>Large component placeholder</div>
+}
 <router-outlet></router-outlet>
